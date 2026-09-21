@@ -21,7 +21,9 @@ jobs:
           sudo install -m 755 tectonic /usr/local/bin/tectonic
 
       - name: Build PDF
-        run: tectonic -X compile main.tex --outdir build
+        run: |
+          mkdir -p build
+          tectonic -X compile main.tex --outdir build
 
       - name: Delete previous releases
         env:
