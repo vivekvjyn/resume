@@ -1,186 +1,21 @@
-\documentclass[]{resume-openfont}
+\documentclass[]{styles/resume-openfont}
 
 \usepackage{academicons}
+\usepackage{styles/cv-commands}
 
 \pagestyle{fancy}
 \resetHeaderAndFooter
 
-%--------------------------------------------------------------
-% Convenience commands
-\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
-\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}\location{#3 | #4}\\
-\descript{#2}\fakeNewLine}
-\newcommand{\projectHeading}[3]{\Project{#1}{#2}
-\descript{#3}\\}
-\newcommand{\volunteerHeading}[3]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3}\fakeNewLine}
-\newcommand{\pubHeading}[4]{\runsubsection{#1}\hfill\location{#2}\\
-\descript{#3} \quad \underlinedLink{#4}{#4}\fakeNewLine}
-\newcommand{\achievementHeading}[3]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3}\fakeNewLine}
-
 \begin{document}
 
-%--------------------------------------------------------------
-%     Profile
-%--------------------------------------------------------------
-\newcommand{\yourName}{Vivek Vijayan}
-\newcommand{\yourWebsite}{vivekvjyn.xyz}
-\newcommand{\yourWebsiteLink}{https://vivekvjyn.xyz}
-\newcommand{\yourEmail}{vivekvjyn@tuta.io}
-\newcommand{\githubUserName}{vivekvjyn}
-\newcommand{\linkedInUserName}{vivekvjyn}
-
-\begin{center}
-    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
-    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}
-\end{center}
-
-%--------------------------------------------------------------
-%     Profiles
-%--------------------------------------------------------------
-\section{Profiles}
-\faGithub\quad \underlinedLink{https://github.com/\githubUserName}{github.com/\githubUserName}\\
-\faLinkedin\quad \underlinedLink{https://www.linkedin.com/in/\linkedInUserName}{linkedin.com/in/\linkedInUserName}\\
-\aiOrcid\quad \underlinedLink{https://orcid.org/0009-0002-9153-7868}{orcid.org/0009-0002-9153-7868}\\
-\faGlobe\quad \underlinedLink{\yourWebsiteLink}{\yourWebsite}
-\sectionsep
-
-%--------------------------------------------------------------
-%     Education
-%--------------------------------------------------------------
-\section{Education}
-\educationHeading{Master in Sound and Music Computing}{Universitat Pompeu Fabra}{Barcelona, Spain}{2024 -- 2026}
-\sectionsep
-
-\educationHeading{Bachelor of Technology in Computer Science}{Kerala Technological University}{Kerala, India}{2020 -- 2024}
-\sectionsep
-
-\educationHeading{Higher Secondary Education in Computer Science}{St. Berchman's Higher Secondary School}{Kerala, India}{2018 -- 2020}
-\sectionsep
-
-%--------------------------------------------------------------
-%     Experience
-%--------------------------------------------------------------
-\section{Work Experience}
-\resumeHeading{Pitch Innovations}{Research \& Development Engineer}{Chennai, India}{2026 -- Present}
-\begin{bullets}
-    \item Contributions mainly to Fluid Pitch 2, Sonic Atlas etc.
-    \item Designing and developing the Carnatic-Engine which synthesizes Gamakas from plain Musical Instrument Digital Interface (MIDI), which can then be mapped to MIDI Polyphonic Expression (MPE).
-    \item Designing and developing Neural Pitch Editor module for Sonic Atlas, which lets you edit instrument samples and make it your own.
-\end{bullets}
-\sectionsep
-
-\resumeHeading{Music Technology Group}{Research Assistant}{Barcelona, Spain}{2025 -- 2026}
-\begin{bullets}
-    \item Assisting research in computational melodic analysis of Carnatic music.
-    \item Improving and extending the \textit{compIAM} repository for computational analysis of Carnatic and Hindustani music.
-    \item Contributed to \textit{mirdata}, a dataset loader for widely used Music Information Retrieval (MIR) datasets.
-\end{bullets}
-\sectionsep
-
-\resumeHeading{Freelance}{Music Producer}{Kerala, India}{2019 -- Present}
-\begin{bullets}
-    \item Worked as an additional programmer for feature films and advertisements.
-    \item Composed original scores for short films; awarded \textbf{Best Music Director} at SMIFA Shorts 2019 (Malayalam category).
-    \item Produced, mixed, and released music as an independent artist.
-    \item Provided audio production services for cultural events.
-\end{bullets}
-\sectionsep
-
-%--------------------------------------------------------------
-%     Projects
-%--------------------------------------------------------------
-\section{Projects}
-\projectHeading{Coconut Audio}{https://codeberg.org/Coconut-Audio}{C++, JUCE, CMake}
-Free and open-source VST plugin development initiative. Plugins include Old Guitarist (physically modelled guitar), Intellectual Gate (drum bleed removal), Pulp Fiction (multi-FX rack) and Sound of Music (multiband bit crusher).\\
-\sectionsep
-
-\projectHeading{Mirdata}{https://mirdata.readthedocs.io/en/latest/}{Python}
-Open-source Python library for loading and exploring music/audio research datasets. Contributions: dataset loaders for the Saraga Audiovisual and IAM Melodic Similarity datasets.\\
-\sectionsep
-
-\projectHeading{CompIAM}{https://mtg.github.io/compIAM/}{Python, PyTorch}
-Repository of datasets, tools and models for computational analysis of Indian Art Music. Contributions: TCN Carnatic and BeatThis Carnatic beat-tracking modules.\\
-\sectionsep
-
-\projectHeading{Computational IAM Tutorial}{https://mtg.github.io/IAM-tutorial-ismir22/landing.html}{Python, Jupyter}
-Contributed notebooks to the ISMIR 2022 tutorial on corpus-based research on Indian Art Music, covering the Saraga Audiovisual dataset and the TCN Carnatic module.\\
-\sectionsep
-
-\projectHeading{GeoSynth}{https://geosynth.vivekvjyn.xyz/}{Python, TensorFlow, Flask, Docker}
-Sonification of geolocations using an autoencoder, with data collected through the Freesound API.\\
-\sectionsep
-
-\projectHeading{Markrethe}{https://markrethe.readthedocs.io/en/latest/}{Python}
-Python package for logging experiments to a Markdown file.\\
-\sectionsep
-
-\projectHeading{TinkerHub CEC Website}{https://tinkerhub-cec-website.vercel.app/}{JavaScript, React}
-Official website of TinkerHub CEC, the TinkerHub chapter at College of Engineering, Chengannur.
-\sectionsep
-
-%--------------------------------------------------------------
-%     Publications
-%--------------------------------------------------------------
-\section{Publications}
-\pubHeading{Leveraging Melodic Context for Improved Svara Representation}{2025}{17th International Symposium on Computer Music Multidisciplinary Research}{https://zenodo.org/records/17497901}
-\sectionsep
-
-\pubHeading{A Rāga Independent Encoder for Svara Representation in Carnatic Music}{2026}{13th International Conference on Digital Libraries for Musicology}{https://dl.acm.org/doi/10.1145/3815723.3815730}
-\sectionsep
-
-\runsubsection{Adapting Deep Learning-based Meter Tracking to Carnatic Music}\hfill\location{2026}\\
-\descript{23rd Sound and Music Computing Conference and Winter School} \quad Accepted, to be presented\fakeNewLine
-\sectionsep
-
-%--------------------------------------------------------------
-%     Achievements
-%--------------------------------------------------------------
-\section{Achievements}
-\runsubsection{Best Paper Award}\hfill\location{2025}\\
-\descript{17th International Symposium on Computer Music Multidisciplinary Research}\fakeNewLine
-\sectionsep
-
-\achievementHeading{AICTE Tuition Fee Waiver}{All India Council for Technical Education}{2020}
-\sectionsep
-
-\runsubsection{Best Music Director (Malayalam Category)}\hfill\location{2019}\\
-\descript{Stoned Monkey International Film Awards for Shorts}\fakeNewLine
-\sectionsep
-
-%--------------------------------------------------------------
-%     Volunteering
-%--------------------------------------------------------------
-\section{Volunteering}
-\volunteerHeading{IHRD Tharang 2023}{Joint Convenor, Media Team Lead}{2023}
-\sectionsep
-
-\runsubsection{\uppercase{Alumni Relation Cell, CEC}}\hfill\location{2021 -- 2023}\\
-\descript{Convocation Ceremony Coordinator, CEC Talks Coordinator}\fakeNewLine
-\sectionsep
-
-\volunteerHeading{IEEE SB CEC}{Media Team Member}{2021 -- 2023}
-\sectionsep
-
-\volunteerHeading{TinkerHub CE Chengannur}{Media Team Member}{2021 -- 2023}
-\sectionsep
-
-\volunteerHeading{CECify Radio}{Audio Editor}{2021 -- 2023}
-\sectionsep
-
-\volunteerHeading{National Service Scheme}{Social Service Volunteer}{2018 -- 2020}
-\sectionsep
-
-\volunteerHeading{National Cadet Corps}{Cadet (Army Wing)}{2015 -- 2017}
-\sectionsep
-
-%--------------------------------------------------------------
-%     Skills
-%--------------------------------------------------------------
-\section{Skills}
-\begin{skillList}
-    \singleItem{Programming:}{C++, Python, JavaScript, Rust, Git}
-    \\
-    \singleItem{Media:}{FL Studio, Ableton Live, Cubase, Reaper, RX, Photoshop, Premiere Pro, After Effects, Figma}
-\end{skillList}
+\input{sections/header}
+\input{sections/profiles}
+\input{sections/education}
+\input{sections/experience}
+\input{sections/projects}
+\input{sections/publications}
+\input{sections/achievements}
+\input{sections/volunteering}
+\input{sections/skills}
 
 \end{document}

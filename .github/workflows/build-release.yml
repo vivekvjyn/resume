@@ -21,7 +21,7 @@ jobs:
           sudo install -m 755 tectonic /usr/local/bin/tectonic
 
       - name: Build PDF
-        run: tectonic main.tex
+        run: tectonic -X compile main.tex --outdir build
 
       - name: Delete previous releases
         env:
@@ -35,7 +35,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          cp main.pdf Vivek-Vijayan-CV.pdf
+          cp build/main.pdf Vivek-Vijayan-CV.pdf
           gh release create latest Vivek-Vijayan-CV.pdf \
             --title "Latest CV" \
             --notes "Auto-built from commit ${{ github.sha }}"

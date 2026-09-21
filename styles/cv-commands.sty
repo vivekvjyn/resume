@@ -1,0 +1,10 @@
+% Convenience commands for CV entries
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}\location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+\newcommand{\volunteerHeading}[3]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3}\fakeNewLine}
+\newcommand{\pubHeading}[4]{\runsubsection{#1}\hfill\location{#2}\\
+\descript{#3} \quad \underlinedLink{#4}{#4}\fakeNewLine}
+\newcommand{\achievementHeading}[3]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3}\fakeNewLine}

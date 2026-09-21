@@ -26,8 +26,8 @@
 % Used for the link symbol
 \RequirePackage{fontawesome5}
 % Set up font 
-\RequirePackage{lato-font}
-\RequirePackage{raleway-font}
+\RequirePackage{styles/lato-font}
+\RequirePackage{styles/raleway-font}
 % make underlying constants: credits to Alex Beattie for noticing and suggesting fix
 \RequirePackage{ulem}
 %--------------------------------------------------------------
