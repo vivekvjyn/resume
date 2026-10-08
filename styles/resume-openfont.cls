@@ -38,7 +38,7 @@
 \color{headings}% Using comments to allow us to split the command across multiple line
 \scshape%
 \customLatoLight%
-\fontsize{16pt}{24pt}%first number is size, second number is space between lines
+\fontsize{14pt}{19pt}%first number is size, second number is space between lines
 \selectfont%
 \raggedright%
 \uppercase%
@@ -49,7 +49,7 @@
 \titleformat{\subsection}{%
 \color{subheadings}%
 \customLatoBlack%
-\fontsize{12pt}{12pt}%
+\fontsize{11.5pt}{12pt}%
 \selectfont%
 \bfseries%
 \uppercase%
@@ -84,7 +84,7 @@
 \newcommand{\runsubsection}[1]{%
 \color{subheadings}%
 \customLatoBlack%
-\fontsize{12pt}{12pt}%
+\fontsize{11.5pt}{12pt}%
 \selectfont%
 \bfseries%
 #1%
@@ -96,7 +96,7 @@
 \raggedright%
 \scshape%
 \customRalewayMedium%
-\fontsize{11pt}{13pt}%
+\fontsize{10.5pt}{12.5pt}%
 \selectfont{#1}%
 \normalfont}
 
@@ -105,7 +105,7 @@
 \color{headings}%
 \raggedright%
 \customRalewayMedium%
-\fontsize{11pt}{13pt}%
+\fontsize{10.5pt}{12.5pt}%
 \selectfont{#1}%
 \normalfont}
 
@@ -115,7 +115,7 @@
 \raggedright%
 \scshape%
 \customRalewayMedium%
-\fontsize{11pt}{12pt}%
+\fontsize{10.5pt}{11.5pt}%
 \selectfont{#1}%
 \normalfont}
 
@@ -138,7 +138,7 @@
 
 %--------------------------------------------------------------
 % Section separators command
-\newcommand{\sectionsep}[0]{\vspace{7pt}}
+\newcommand{\sectionsep}[0]{\vspace{6pt}}
 
 %--------------------------------------------------------------
 % Bullet Lists with fewer gaps command
